@@ -1080,7 +1080,7 @@ pub async fn do_check_software_update() -> hbb_common::ResultType<()> {
 
 #[inline]
 pub fn get_app_name() -> String {
-    hbb_common::config::APP_NAME.read().unwrap().clone()
+    "NucleoTech Soporte".to_string()
 }
 
 #[inline]
@@ -2558,7 +2558,7 @@ pub fn get_builtin_option(key: &str) -> String {
 
 #[inline]
 pub fn is_custom_client() -> bool {
-    get_app_name() != "RustDesk"
+    get_app_name() != "Nucleo Tech Soporte"
 }
 
 pub fn verify_login(_raw: &str, _id: &str) -> bool {
